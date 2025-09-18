@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqueria "El Güero" | Authentic Mexican Catering & Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#006847',  // Mexican green
+                        secondary: '#FFFFFF', // White
+                        accent: '#CE1126',   // Mexican red
+                        dark: '#1D3557',
+                        warm: '#006847'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-image: none;
+            background-size: cover;
+            background-position: center;
+        }
+        .menu-item:hover .menu-overlay {
+            opacity: 0.9;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body class="bg-secondary font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary font-serif">Taqueria "El Güero"</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-dark hover:text-primary transition">Home</a>
+                    <a href="#about" class="text-dark hover:text-primary transition">About</a>
+                    <a href="#products" class="text-dark hover:text-primary transition">Products</a>
+                    <a href="#catering" class="text-dark hover:text-primary transition">Catering</a>
+                    <a href="#contact" class="text-dark hover:text-primary transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern text-white py-20 md:py-32 relative bg-primary">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6">Authentic Mexican Flavors</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Handcrafted tortillas, artisanal salsas, and full-service catering for your special events</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-primary hover:bg-opacity-90 text-white px-8 py-3 rounded-full font-semibold transition">Our Products</a>
+                <a href="#catering" class="bg-white hover:bg-opacity-90 text-dark px-8 py-3 rounded-full font-semibold transition">Catering Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+                    <div class="bg-gray-200 w-full h-64 rounded-lg shadow-xl flex items-center justify-center">
+                        <span class="text-gray-500">Image placeholder</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-6">Our Story</h2>
+                    <p class="text-lg text-gray-700 mb-6">Founded by Gregory Antony, blending his Dutch heritage with the bold flavors of Monterrey, Taqueria "El Guëro" brings a unique fusion of European techniques and authentic norteño cuisine. Every dish carries the spirit of Monterrey's vibrant food culture.</p>
+                    <p class="text-lg text-gray-700 mb-6">From the carne asada traditions to the Dutch-inspired presentation, we create unforgettable flavors that honor both roots while innovating for modern palates.</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary rounded-full p-3 mr-4">
+                            <i data-feather="check" class="text-white"></i>
+                        </div>
+                        <span class="text-dark font-medium">100% Natural Ingredients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 md:py-24 bg-secondary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-4">Our Products</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">Handmade with traditional techniques and authentic ingredients</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition" data-aos="zoom-in">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <span class="text-gray-500">Tortillas Image</span>
+                        </div>
+                        <div class="absolute inset-0 bg-primary opacity-0 hover:opacity-90 transition flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">€7.50 / dozen</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Handmade Corn Tortillas</h3>
+                        <p class="text-gray-700 mb-4">Made daily with organic masa harina, just like abuela used to make.</p>
+                        <button class="bg-primary hover:bg-opacity-80 text-white px-4 py-2 rounded-full text-sm font-semibold transition">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <span class="text-gray-500">Salsas Image</span>
+                        </div>
+                        <div class="absolute inset-0 bg-primary opacity-0 hover:opacity-90 transition flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">€5.99 / jar</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Artisanal Salsas</h3>
+                        <p class="text-gray-700 mb-4">Choose from our selection of roasted tomatillo, fiery habanero, or classic red salsa.</p>
+                        <button class="bg-primary hover:bg-opacity-80 text-white px-4 py-2 rounded-full text-sm font-semibold transition">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <span class="text-gray-500">Flower Tortillas Image</span>
+                        </div>
+                        <div class="absolute inset-0 bg-primary opacity-0 hover:opacity-90 transition flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">€8.50 / dozen</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Flower Tortillas Estilo Norteño</h3>
+                        <p class="text-gray-700 mb-4">Handmade tortillas infused with edible flowers, a Monterrey specialty.</p>
+                        <button class="bg-primary hover:bg-opacity-80 text-white px-4 py-2 rounded-full text-sm font-semibold transition">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section id="catering" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-4">Catering Services</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">Bring the flavors of Mexico to your next event</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-secondary rounded-lg p-8 shadow-md hover:shadow-xl transition" data-aos="fade-up">
+                    <div class="text-primary mb-4">
+                        <i data-feather="users" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Taco Fiesta</h3>
+                    <p class="text-gray-700 mb-6">Perfect for casual gatherings and office parties (20-50 people)</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>3 types of tacos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>2 salsa varieties</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>Rice & beans</span>
+                        </li>
+                    </ul>
+                    <p class="text-2xl font-bold text-dark mb-4">€12/person</p>
+                    <button class="w-full bg-primary hover:bg-opacity-90 text-white py-2 rounded-full font-semibold transition">Book Now</button>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="bg-secondary rounded-lg p-8 shadow-md hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center text-white mb-4 mx-auto">
+                        <i data-feather="star" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Wedding Package</h3>
+                    <p class="text-gray-700 mb-6">Elegant Mexican cuisine for your special day (50-200 people)</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>5-course plated dinner</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>Signature cocktails</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>Churro dessert station</span>
+                        </li>
+                    </ul>
+                    <p class="text-2xl font-bold text-dark mb-4">€38/person</p>
+                    <button class="w-full bg-primary hover:bg-opacity-90 text-white py-2 rounded-full font-semibold transition">Book Now</button>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="bg-secondary rounded-lg p-8 shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary mb-4">
+                        <i data-feather="home" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Family Meal</h3>
+                    <p class="text-gray-700 mb-6">Complete meals for takeout (serves 4-6 people)</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>Choice of main dish</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>Rice, beans & tortillas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="text-primary mr-2"></i>
+                            <span>Fresh salsa & guacamole</span>
+                        </li>
+                    </ul>
+                    <p class="text-2xl font-bold text-dark mb-4">€30/meal</p>
+                    <button class="w-full bg-primary hover:bg-opacity-90 text-white py-2 rounded-full font-semibold transition">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-6">Get In Touch</h2>
+                    <p class="text-lg text-gray-700 mb-8">Have questions about our products or catering services? We'd love to hear from you!</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i data-feather="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-1">Location</h4>
+                                <p class="text-gray-700">Rotterdam, Zuid-Holland</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i data-feather="phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-1">Phone</h4>
+                                <p class="text-gray-700">+31 611287856</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i data-feather="mail"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-1">Email</h4>
+                                <p class="text-gray-700">gregoryantonyts@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i data-feather="clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-1">Hours</h4>
+                                <p class="text-gray-700">Monday-Friday: 9am-7pm<br>Saturday: 10am-5pm<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <form class="bg-secondary p-8 rounded-lg shadow-md">
+                        <div class="mb-6">
+                            <label for="name" class="block text-dark font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-dark font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-dark font-medium mb-2">Subject</label>
+                            <select id="subject" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <option value="">Select a subject</option>
+                                <option value="products">Product Inquiry</option>
+                                <option value="catering">Catering Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-dark font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent hover:bg-opacity-90 text-white py-3 rounded-full font-semibold transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-secondary border-t-2 border-b-2 border-primary">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h3 class="text-2xl font-serif font-bold text-dark mb-4">Join Our Mailing List</h3>
+            <p class="text-gray-700 mb-6 max-w-2xl mx-auto">Stay updated on new products, special offers, and upcoming events</p>
+            <div class="flex flex-col sm:flex-row justify-center max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-l-full sm:rounded-r-none rounded-r-full mb-2 sm:mb-0 focus:outline-none flex-grow">
+                <button class="bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-r-full sm:rounded-l-none rounded-l-full font-semibold transition">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-serif font-bold mb-4">Taqueria "El Güero"</h4>
+                    <p class="text-gray-400">Blending Dutch precision with Monterrey's bold flavors since 2025.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#catering" class="text-gray-400 hover:text-white transition">Catering</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Products</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tortillas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Salsas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Flower Tortillas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Seasonings</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Connect With Us</h5>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Follow us for daily recipes and special offers!</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Taqueria "El Guëro". All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('button[aria-label="menu"]').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex.space-x-8');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('shadow-md');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('space-x-0');
+        });
+    </script>
+</body>
+</html>
